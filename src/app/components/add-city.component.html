@@ -1,0 +1,31 @@
+<h3 mat-subheader>Add City</h3>
+<mat-card>
+<div class="example-container">
+    <form class="example-container" [formGroup]="addCityForm">
+    <mat-form-field>
+        <input matInput placeholder="Country" formControlName="country" required />
+        <mat-hint align="end">* Mandatory field.</mat-hint>
+        <mat-error *ngIf="hasError('country', 'required')">Country is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="City" formControlName="city" required />
+        <mat-hint align="end">* Mandatory field.</mat-hint>
+        <mat-error *ngIf="hasError('city', 'required')">City is required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Image URL" formControlName="imageUrl" required />
+        <mat-hint align="end">* Mandatory field.</mat-hint>
+        <mat-error *ngIf="hasError('imageUrl', 'required')">Image Url is required</mat-error>
+    </mat-form-field>
+    
+    <button
+        mat-raised-button
+        color="primary"
+        (click)="saveCity()"
+        [disabled]="!addCityForm.valid"
+    >
+    Add
+    </button>
+    </form>
+</div>
+</mat-card>
