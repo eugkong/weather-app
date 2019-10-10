@@ -7,7 +7,7 @@ export class Weather {
         public description: string,
         public windSpeed: number,
         public windDegree: number
-    ){
+    ) {
 
     }
 }

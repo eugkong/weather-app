@@ -1,5 +1,5 @@
 export interface City {
-    country: string;
-    city: string;
-    imageurl: string;  
-  }
+  country: string;
+  city: string;
+  imageurl: string;
+}
