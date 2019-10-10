@@ -6,10 +6,10 @@ import { ListCityComponent } from './components/list-city.component';
 import { WeatherDetailsComponent } from './components/weather-details.component';
 
 const routes: Routes = [
-  { path: "", component: ListCityComponent },
-  { path: "add-city", component: AddCityComponent },
-  { path: "weather-details/:city", component: WeatherDetailsComponent },
-  { path: "**", redirectTo: "/", pathMatch: 'full' }
+  { path: '', component: ListCityComponent },
+  { path: 'add-city', component: AddCityComponent },
+  { path: 'weather-details/:city', component: WeatherDetailsComponent },
+  { path: '**', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
